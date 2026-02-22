@@ -9,4 +9,10 @@ export const CARD_TYPES = {
     color: "#f4d4d4",
     accent: "#9a2a2a",
   },
+  movie: {
+    label: "Movie/Show",
+    emoji: "🎬",
+    color: "#f4e8d4",
+    accent: "#8a7a3a",
+  },
 };

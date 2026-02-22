@@ -287,7 +287,12 @@ export default function CreateScreen() {
       {/* Preview button */}
       <div style={{ padding: "8px 32px 40px" }}>
         <button
-          onClick={() => router.push("/preview")}
+          onClick={() =>
+            router.push({
+              pathname: "/preview",
+              params: { cards: JSON.stringify(cards), senderName },
+            })
+          }
           style={{
             padding: "10px 20px",
             borderRadius: 12,
