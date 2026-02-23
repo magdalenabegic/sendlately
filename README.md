@@ -20,7 +20,7 @@ This is an [Expo](https://expo.dev) project created with [`create-expo-app`](htt
 
 **Catch up before you catch up.**
 
-Lately is a web and mobile app that lets you create a personal collage — books you've read, places you've visited, moments that happened — and send it to a friend before you meet up. No more awkward "so what's new?" silences. They arrive already knowing what's been going on with you.
+Lately is a web and mobile app that lets you create a personal collage of what you've been up to lately and send it to a long distance firend or before you meet up. No more awkward "so what's new?" silences.
 
 ---
 
@@ -29,7 +29,20 @@ Lately is a web and mobile app that lets you create a personal collage — books
 1. **Create** — build your Lately by adding cards: books, places, moments, music, things you're obsessing over
 2. **Send** — share a link with a friend
 3. **They open it** — they flip through your cards and react, no account needed
-4. **You meet up** — conversation flows from the moment you sit down
+
+---
+
+## Why Expo?
+
+Lately is built with Expo, a toolkit on top of React Native. If you're wondering why not plain React or Next.js, here's the reasoning:
+The goal from day one was web AND mobile from a single codebase. Plain React only runs in a browser. React Native runs on iOS and Android but historically struggled with web. Expo solves all three, you write one codebase and it compiles to iOS, Android, and a web PWA at sendlately.com.
+This means:
+
+Friends on iPhone or Android can install it as an app (no App Store required, it's a PWA)
+Friends on a laptop can use it at sendlately.com in any browser
+All data syncs via Supabase regardless of how they access it
+
+The tradeoff is that Expo has some limitations with deeply native features like Face ID or advanced camera use, but Lately doesn't need any of those right now.
 
 ---
 
